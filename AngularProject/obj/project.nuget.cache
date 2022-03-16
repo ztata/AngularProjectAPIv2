@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WbEBxvJHxO93bdxJe+YWeJm3RqL3sGUtHAoZckxR3oMxRUv2hxDG3aAMT9SOPRwegfPqLSOGBGi3mvhcwUbcUw==",
+  "dgSpecHash": "pJe8aawH4/1f1zcmhRNvCeElVr+NzvvTO1+WLO6dmJ2sp7umQtyUe4vqr+jkF9q2CmKJjvBTeAI+3JX23cST1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\AngularProject.csproj",
+  "projectFilePath": "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\AngularProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zacha\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\zacha\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

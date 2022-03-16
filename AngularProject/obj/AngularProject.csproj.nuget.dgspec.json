@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\AngularProject.csproj": {}
+    "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\AngularProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\AngularProject.csproj": {
+    "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\AngularProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\AngularProject.csproj",
+        "projectUniqueName": "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\AngularProject.csproj",
         "projectName": "AngularProject",
-        "projectPath": "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\AngularProject.csproj",
+        "projectPath": "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\AngularProject.csproj",
         "packagesPath": "C:\\Users\\zacha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zacha\\source\\repos\\angularProjectBackup\\AngularProject\\AngularProject\\AngularProject\\obj\\",
+        "outputPath": "C:\\Users\\zacha\\source\\repos\\AngularProjectV2\\API\\AngularProjectAPIv2\\AngularProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zacha\\AppData\\Roaming\\NuGet\\NuGet.Config",
