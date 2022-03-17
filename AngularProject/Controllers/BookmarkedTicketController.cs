@@ -45,12 +45,6 @@ namespace AngularProject.Controllers
             }
         }
 
-        // PUT api/<BookmarkedTicketController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
         // DELETE api/<BookmarkedTicketController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)

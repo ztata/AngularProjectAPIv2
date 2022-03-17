@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AngularProject.Migrations
 {
     [DbContext(typeof(TicketContext))]
-    [Migration("20220315213415_databaseCreation")]
-    partial class databaseCreation
+    [Migration("20220316143635_dbCreationInNewFileLocation")]
+    partial class dbCreationInNewFileLocation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -64,6 +64,47 @@ namespace AngularProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BookmarkedTickets");
+                });
+
+            modelBuilder.Entity("AngularProject.DataObjects.ResolvedTicket", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("completedBy")
+                        .HasColumnType("nvarchar(40)")
+                        .HasMaxLength(40);
+
+                    b.Property<string>("createdBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(40)")
+                        .HasMaxLength(40);
+
+                    b.Property<bool>("isResolved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("resolutionNotes")
+                        .HasColumnType("nvarchar(400)")
+                        .HasMaxLength(400);
+
+                    b.Property<string>("ticketDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(400)")
+                        .HasMaxLength(400);
+
+                    b.Property<int>("ticketId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ticketName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(40)")
+                        .HasMaxLength(40);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ResolvedTickets");
                 });
 
             modelBuilder.Entity("AngularProject.DataObjects.Ticket", b =>

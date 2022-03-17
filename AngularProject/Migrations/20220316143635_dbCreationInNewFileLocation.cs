@@ -2,7 +2,7 @@
 
 namespace AngularProject.Migrations
 {
-    public partial class databaseCreation : Migration
+    public partial class dbCreationInNewFileLocation : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -24,6 +24,25 @@ namespace AngularProject.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_BookmarkedTickets", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ResolvedTickets",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ticketId = table.Column<int>(nullable: false),
+                    ticketName = table.Column<string>(maxLength: 40, nullable: false),
+                    createdBy = table.Column<string>(maxLength: 40, nullable: false),
+                    ticketDescription = table.Column<string>(maxLength: 400, nullable: false),
+                    isResolved = table.Column<bool>(nullable: false),
+                    completedBy = table.Column<string>(maxLength: 40, nullable: true),
+                    resolutionNotes = table.Column<string>(maxLength: 400, nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ResolvedTickets", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -49,6 +68,9 @@ namespace AngularProject.Migrations
         {
             migrationBuilder.DropTable(
                 name: "BookmarkedTickets");
+
+            migrationBuilder.DropTable(
+                name: "ResolvedTickets");
 
             migrationBuilder.DropTable(
                 name: "Tickets");
